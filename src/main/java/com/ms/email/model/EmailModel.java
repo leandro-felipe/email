@@ -1,6 +1,7 @@
 package com.ms.email.model;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,7 +23,7 @@ public class EmailModel {
 
 	@Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-	private Long id;
+	private UUID id;
 	private String ownerRef;
 	private String emailFrom;
 	private String emailTo;
